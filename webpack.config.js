@@ -21,12 +21,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(c)ss$/,
         exclude: /node_modules/,
         use: [
           { loader: MiniCSSExtractPlugin.loader },
           { loader: 'css-loader' },
-          {loader: 'sass-loader'},
         ],
       },
       {
